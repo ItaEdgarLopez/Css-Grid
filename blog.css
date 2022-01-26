@@ -56,3 +56,26 @@ footer a{
 footer a:hover{
         color: blueviolet;
 }
+.box{
+        background-color: tomato;
+        width: 100px;
+        height: 100px;
+      /*   transition: width 0.3s;
+        transition: background-color 2.3s; */
+        transition: transform 0.8s;               
+}
+.box:hover{
+          width: 400px;
+        background-color:turquoise; 
+         transform: scale(2.2); 
+}
+.box.active{
+        transform: scale(6.2);
+}
+section article img{
+        transition: transform 1.5s;
+}
+section article img:hover{
+        width: 500px;
+        transform: scale(1.1);
+}

@@ -12,6 +12,7 @@
         <title>Blog </title>
 </head>
 <body>
+        <div class="box" onclick="changeClass()"></div>
         <header id="titulo"><h1>Blog de pruebas</h1></header>
         <section class="container">
                 <article class="post">
@@ -28,6 +29,13 @@
                 </section>
                 <p>Copyright 2022</p>
         </footer>
+       <script>
+               function changeClass(){
+                       const element = document.getElementsByClassName("box")[0];
+                       console.log(element.classList);
+                       element.classList.toggle("active");
+               }
+       </script>
         
 </body>
 </html>
